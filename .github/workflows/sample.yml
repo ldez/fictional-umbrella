@@ -5,8 +5,14 @@ on:
     branches:
       - main
   pull_request:
-    paths:
-      - '!docs/**'
+    paths-ignore:
+      - 'docs/**'
+
+  # This cannot work because the 'paths' required one path to trigger the action + the negative one.
+  # https://docs.github.com/en/actions/using-workflows/triggering-a-workflow#example-including-and-excluding-paths
+#  pull_request:
+#    paths:
+#      - '!docs/**'
 
 jobs:
 
