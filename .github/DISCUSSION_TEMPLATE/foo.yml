@@ -1,4 +1,6 @@
 title: "New release v"
+description: "Create a proposal for a new release."
+name: "foo"
 body:
   - type: dropdown
     id: type
@@ -8,6 +10,8 @@ body:
         - Major
         - Minor
         - Patch
+    validations:
+      required: true
   - type: input
     id: version
     attributes:
