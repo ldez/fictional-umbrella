@@ -1,7 +1,7 @@
 title: "New release v"
 body:
   - type: dropdown
-    id: day
+    id: type
     attributes:
       label: Release type
       options:
