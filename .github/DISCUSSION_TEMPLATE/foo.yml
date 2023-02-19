@@ -1,6 +1,4 @@
 title: "New release v"
-description: "Create a proposal for a new release."
-name: "foo"
 body:
   - type: dropdown
     id: type
