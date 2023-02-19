@@ -83,7 +83,7 @@ body:
         - "12:00 pm UTC"
         - "12:30 pm UTC"
   - type: dropdown
-    id: time
+    id: day
     attributes:
       label: When the release will be created? (day in UTC)
       description: "It is better to have 12h to 24h before the release."
