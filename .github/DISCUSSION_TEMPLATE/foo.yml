@@ -29,6 +29,10 @@ body:
     attributes:
       label: Changes since the previous version
       description: 'git log --pretty=format:"* %s" --date=short v1.xx.x...master > log.txt'
+      value: |-
+        ```
+        # Paste output here
+        ```
     validations:
       required: true
   - type: input
