@@ -13,7 +13,7 @@ body:
   - type: input
     id: version
     attributes:
-      label: The version
+      label: Version
       description: "vX.XX.X"
     validations:
       required: true
@@ -31,7 +31,7 @@ body:
       description: 'git log --pretty=format:"* %s" --date=short v1.xx.x...master > log.txt'
       value: |-
         ```
-        # Paste output here
+        # Paste the output here
         ```
     validations:
       required: true
@@ -39,7 +39,7 @@ body:
     id: diff
     attributes:
       label: Link to the diff with the previous version
-      description: "https://github.com/golangci/golangci-lint/compare/v1.xx.x...master"
+      value: "https://github.com/golangci/golangci-lint/compare/v1.xx.x...master"
     validations:
       required: true
   - type: dropdown
