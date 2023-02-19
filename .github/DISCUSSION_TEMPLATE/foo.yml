@@ -1,8 +1,20 @@
 title: "New release v"
 body:
-  - type: markdown
+  - type: dropdown
+    id: day
     attributes:
-      value: I would like to create a bug-fix release.
+      label: Release type
+      options:
+        - Major
+        - Minor
+        - Patch
+  - type: input
+    id: version
+    attributes:
+      label: The version
+      description: "vx.xx.x"
+    validations:
+      required: true
   - type: textarea
     id: hottopics
     attributes:
@@ -82,6 +94,8 @@ body:
         - "11:30 pm UTC"
         - "12:00 pm UTC"
         - "12:30 pm UTC"
+    validations:
+      required: true
   - type: dropdown
     id: day
     attributes:
@@ -95,6 +109,11 @@ body:
         - Friday
         - Saturday
         - Sunday
-  - type: markdown
+    validations:
+      required: true
+  - type: textarea
+    id: message
     attributes:
-      value: "WDYT? :rocket: or :-1:"
+      value: |
+        I would like to create a new release.
+        WDYT? :rocket: or :-1:
