@@ -97,4 +97,4 @@ body:
         - Sunday
   - type: markdown
     attributes:
-      value: WDYT? :rocket: or :-1:
+      value: "WDYT? :rocket: or :-1:"
