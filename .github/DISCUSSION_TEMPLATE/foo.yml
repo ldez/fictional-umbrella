@@ -1,0 +1,100 @@
+title: "New release v"
+body:
+  - type: markdown
+    attributes:
+      value: I would like to create a bug-fix release.
+  - type: textarea
+    id: hottopics
+    attributes:
+      label: The major elements of the related
+      description: "What are the major elements of this release?"
+    validations:
+      required: true
+  - type: textarea
+    id: changes
+    attributes:
+      label: Changes since the previous version
+      description: "git log --pretty=format:"* %s" --date=short v1.xx.x...master > log.txt"
+    validations:
+      required: true
+  - type: input
+    id: diff
+    attributes:
+      label: Link to the diff with the previous version
+      description: "https://github.com/golangci/golangci-lint/compare/v1.xx.x...master"
+    validations:
+      required: true
+  - type: dropdown
+    id: time
+    attributes:
+      label: When the release will be created? (hour in UTC)
+      description: "It is better to have 12h to 24h before the release."
+      options:
+        - "0:00 am UTC"
+        - "0:30 am UTC"
+        - "1:00 am UTC"
+        - "1:30 am UTC"
+        - "2:00 am UTC"
+        - "2:30 am UTC"
+        - "3:00 am UTC"
+        - "3:30 am UTC"
+        - "4:00 am UTC"
+        - "4:30 am UTC"
+        - "5:00 am UTC"
+        - "5:30 am UTC"
+        - "6:00 am UTC"
+        - "6:30 am UTC"
+        - "7:00 am UTC"
+        - "7:30 am UTC"
+        - "8:00 am UTC"
+        - "8:30 am UTC"
+        - "9:00 am UTC"
+        - "9:30 am UTC"
+        - "10:00 am UTC"
+        - "10:30 am UTC"
+        - "11:00 am UTC"
+        - "11:30 am UTC"
+        - "12:00 am UTC"
+        - "12:30 am UTC"
+        - "0:00 pm UTC"
+        - "0:30 pm UTC"
+        - "1:00 pm UTC"
+        - "1:30 pm UTC"
+        - "2:00 pm UTC"
+        - "2:30 pm UTC"
+        - "3:00 pm UTC"
+        - "3:30 pm UTC"
+        - "4:00 pm UTC"
+        - "4:30 pm UTC"
+        - "5:00 pm UTC"
+        - "5:30 pm UTC"
+        - "6:00 pm UTC"
+        - "6:30 pm UTC"
+        - "7:00 pm UTC"
+        - "7:30 pm UTC"
+        - "8:00 pm UTC"
+        - "8:30 pm UTC"
+        - "9:00 pm UTC"
+        - "9:30 pm UTC"
+        - "10:00 pm UTC"
+        - "10:30 pm UTC"
+        - "11:00 pm UTC"
+        - "11:30 pm UTC"
+        - "12:00 pm UTC"
+        - "12:30 pm UTC"
+  - type: dropdown
+    id: time
+    attributes:
+      label: When the release will be created? (day in UTC)
+      description: "It is better to have 12h to 24h before the release."
+      options:
+        - Monday
+        - Tuesday
+        - Wednesday
+        - Thursday
+        - Friday
+        - Saturday
+        - Sunday
+  - type: markdown
+    attributes:
+      value: WDYT? :rocket: or :-1:
